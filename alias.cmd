@@ -18,9 +18,9 @@ if "%1"=="/?" (
 	goto :HELP
 )
 
-set file=%~1.cmd
+set file=C:\cmd_ex\%~1.cmd
 
-echo @echo off >> %file%
+echo @echo off > %file%
 echo if "%%1"=="-h" ( goto :HELP ) >> %file%
 echo if "%%1"=="/h" ( goto :HELP ) >> %file%
 echo if "%%1"=="/?" ( goto :HELP ) >> %file%
