@@ -13,4 +13,11 @@ ls: wide format dir
 
 rm: del or rd if given -r
 
+cp: copy
+
+xcp: xcopy
+
+mv: move
+
 alias: creates a simple cmd alias
+
