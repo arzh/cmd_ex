@@ -18,6 +18,12 @@ if "%1"=="/?" (
 	goto :HELP
 )
 
+if "%1"=="-v" (
+	@echo %~2
+	@echo %~3
+	goto :EXIT
+)
+
 set file=C:\cmd_ex\%~1.cmd
 
 echo @echo off > %file%
